@@ -1,0 +1,59 @@
+:root {
+    --side-space: 10px;
+    --text-color: #fff;
+    --text-font: 'Arial', sans-serif;
+    --page-color: linear-gradient(to bottom, #333, #000);
+    --logo-size: 100px;
+    --logo-text-size: 1.5rem;
+    --buttons-height: 60px;
+    --buttons-color: rgba(255, 255, 255, 0);
+    --icon-size: 30px;
+    --buttons-text-size: 1.2rem;
+}
+
+* {
+    text-decoration: none;
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+body {
+    height: 100vh;
+    padding: var(--side-space);
+    background: var(--page-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo img {
+    width: var(--logo-size);
+}
+
+.logo-name {
+    font-size: var(--logo-text-size);
+    margin-top: 5px;
+}
+
+.button {
+    width: 100%;
+    height: var(--buttons-height);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: var(--buttons-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img {
+    width: var(--icon-size);
+    margin-right: 10px;
+}
+
+.button-name {
+    font-size: var(--buttons-text-size);
+}
