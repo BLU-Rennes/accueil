@@ -2,7 +2,7 @@
     --side-space: 10px;
     --text-color: #fff;
     --text-font: 'Arial', sans-serif;
-    --page-color: linear-gradient(to bottom, #333, #000);
+    --page-color: linear-gradient(to bottom, #acf, #006);
     --logo-size: 100px;
     --logo-text-size: 1.5rem;
     --buttons-height: 60px;
@@ -35,25 +35,27 @@ body {
 
 .logo-name {
     font-size: var(--logo-text-size);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.button {
-    width: 100%;
-    height: var(--buttons-height);
-    border-radius: 10px;
-    border: 1px solid #fff;
-    background-color: var(--buttons-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.qrcode > img {
+    width: 200px;
 }
 
-.button img {
-    width: var(--icon-size);
+.qrlogo > img {
+    width : 40px;
     margin-right: 10px;
 }
 
-.button-name {
-    font-size: var(--buttons-text-size);
+.qrlogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+.qrcode {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
 }
